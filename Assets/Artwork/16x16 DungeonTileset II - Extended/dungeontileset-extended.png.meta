@@ -1,7 +1,25 @@
 fileFormatVersion: 2
 guid: cc5de1175c409be469c9d7907c8e745d
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6435753171379192124
+    second: dungeontileset-extended_0
+  - first:
+      213: -2381798348262088124
+    second: healing_fountain_0
+  - first:
+      213: 1789241896626981711
+    second: healing_fountain_1
+  - first:
+      213: -965978741949361449
+    second: healing_fountain_2
+  - first:
+      213: -9143178528356779460
+    second: healing_fountain_top_0
+  - first:
+      213: 4735219577811173883
+    second: healing_fountain_bottom_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -101,7 +119,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: dungeontileset-extended_0
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 768
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce79d5b69c9fa6a0800000000000000
+      internalID: -6435753171379192124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healing_fountain_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 892
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442e935850722fed0800000000000000
+      internalID: -2381798348262088124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healing_fountain_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 892
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b82b1760aa4d810800000000000000
+      internalID: 1789241896626981711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healing_fountain_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 892
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d29781c3772892f0800000000000000
+      internalID: -965978741949361449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healing_fountain_top_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 944
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ab0533297ec1180800000000000000
+      internalID: -9143178528356779460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healing_fountain_bottom_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 876
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf109e42e11e6b140800000000000000
+      internalID: 4735219577811173883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

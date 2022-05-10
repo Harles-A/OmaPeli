@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 154443993}
   - component: {fileID: 154443996}
   - component: {fileID: 154443995}
+  - component: {fileID: 154443997}
   m_Layer: 9
   m_Name: player_0
   m_TagString: Untagged
@@ -245,6 +246,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 064bac5c52ca28e48a6b9a72c26f4137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &154443997
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154443992}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 73b4b9b001b202543af14712a537e0d3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &265865057
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,15 +355,43 @@ Tilemap:
   m_Enabled: 1
   m_Tiles: {}
   m_AnimatedTiles: {}
-  m_TileAssetArray: []
-  m_TileSpriteArray: []
-  m_TileMatrixArray: []
-  m_TileColorArray: []
+  m_TileAssetArray:
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  m_TileSpriteArray:
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  m_TileMatrixArray:
+  - m_RefCount: 0
+    m_Data:
+      e00: -1.084227e-19
+      e01: -3.590875e+22
+      e02: 4.6608317e-10
+      e03: 4.6776314
+      e10: 5.56e-43
+      e11: 4.5904e-41
+      e12: 5.59e-43
+      e13: 5.56e-43
+      e20: 6e-45
+      e21: 5.1566108e+22
+      e22: 5.1561964e+22
+      e23: 5.1561964e+22
+      e30: 0
+      e31: 2e-44
+      e32: 2e-44
+      e33: 2e-44
+  m_TileColorArray:
+  - m_RefCount: 0
+    m_Data: {r: 4.6608317e-10, g: 4.6608317e-10, b: 4.6608317e-10, a: 4.6608317e-10}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: 0, y: 0, z: 0}
-  m_Size: {x: 0, y: 0, z: 1}
+  m_Origin: {x: 0, y: -1, z: 0}
+  m_Size: {x: 4, y: 4, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -517,6 +565,7 @@ GameObject:
   - component: {fileID: 1993477066}
   - component: {fileID: 1993477065}
   - component: {fileID: 1993477064}
+  - component: {fileID: 1993477067}
   m_Layer: 9
   m_Name: enemy_0
   m_TagString: Untagged
@@ -615,3 +664,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1993477067
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993477063}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 26d35bf90c337f743a9287573cb65c87, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
