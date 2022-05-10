@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     private BoxCollider2D boxCollider;
     private Vector3 moveDelta;
     private RaycastHit2D hit;
+    public float robustMoveSpeed = 1.5f;
+    public float boxCastCorrection = 0.5f;
 
     private void Start()
     {
@@ -22,7 +24,7 @@ public class PlayerController : MonoBehaviour
         // Look for movement input on the Y axis.
         float y = Input.GetAxisRaw("Vertical");
         // Reset moveDelta.
-        moveDelta = new Vector3(x, y, 0);
+        moveDelta = new Vector3(x * boxCastCorrection, y * boxCastCorrection, 0);
 
         // Swap Sprite direction depending on which way character is moving.
         if (moveDelta.x > 0)
@@ -35,7 +37,7 @@ public class PlayerController : MonoBehaviour
         if(hit.collider == null)
         {
             // Apply movement to the character
-            transform.Translate(0, moveDelta.y * Time.deltaTime, 0);
+            transform.Translate(0, (moveDelta.y * robustMoveSpeed) * Time.deltaTime, 0);
         }
         // Do a boxcast to see if there's anything in the way that should stop us from moving on the X axis.
         hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(moveDelta.x, 0), Mathf.Abs(moveDelta.x * Time.deltaTime), LayerMask.GetMask("Characters", "Blockers"));
@@ -43,7 +45,7 @@ public class PlayerController : MonoBehaviour
         if (hit.collider == null)
         {
             // Apply movement to the character
-            transform.Translate(moveDelta.x * Time.deltaTime, 0, 0);
+            transform.Translate((moveDelta.x * robustMoveSpeed) * Time.deltaTime, 0, 0);
         }
 
 
