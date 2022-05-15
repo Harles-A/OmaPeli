@@ -10,6 +10,11 @@ public class CameraManager : MonoBehaviour
     public float boundX = 0.2f;
     public float boundY = 0.1f;
 
+    private void Start()
+    {
+        lookAt = GameObject.Find("Player").transform;
+    }
+
     private void LateUpdate()
     {
         Vector3 delta = Vector3.zero;

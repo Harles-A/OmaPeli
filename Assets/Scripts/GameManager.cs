@@ -60,6 +60,51 @@ public class GameManager : MonoBehaviour
         return false;
     }
 
+    //EXP System
+    public int GetCurrentLevel()
+    {
+        int r = 0;
+        int add = 0;
+
+        while(experience >= add)
+        {
+            add += xpTable[r];
+            r++;
+            //Check if we are already at max level
+            if (r == xpTable.Count)
+                return r;
+        }
+
+        return r;
+    }
+
+    public int GetXpToLevel(int level)
+    {
+        int r = 0;
+        int xp = 0;
+
+        while(r < level)
+        {
+            xp += xpTable[r];
+            r++;
+        }
+
+        return xp;
+    }
+
+    public void GrantXp(int xp)
+    {
+        int currentLevel = GetCurrentLevel();
+        experience += xp;
+        if (currentLevel < GetCurrentLevel())
+            OnLevelUp();
+    }
+    public void OnLevelUp()
+    {
+        Debug.Log("Level Up");
+        player.OnLevelUp();
+    }
+
     //Save the current state of the game
     public void SaveState()
     {
@@ -81,10 +126,17 @@ public class GameManager : MonoBehaviour
         string[] data = PlayerPrefs.GetString("SaveState").Split('|');
 
         //Change character model - TODO
+
+        //Change the amount of money
         coins = int.Parse(data[1]);
+
+        //Change EXP and level(if needed)
         experience = int.Parse(data[2]);
+        if (GetCurrentLevel() != 1)
+            player.SetLevel(GetCurrentLevel());
+        //Change weapon model
         weapon.SetWeaponLevel(int.Parse(data[3]));
 
-        Debug.Log("LoadState");
+        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
     }
 }
