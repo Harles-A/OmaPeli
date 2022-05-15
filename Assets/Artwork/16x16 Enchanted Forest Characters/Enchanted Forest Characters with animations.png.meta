@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: daa9fa2186b8822469be87c7e0c674f5
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7383778312562845418
+    second: monk1_0
+  - first:
+      213: 3007135303679770973
+    second: monk1_1
+  - first:
+      213: -3836681465447209298
+    second: monk1_2
+  - first:
+      213: -2878131774290811365
+    second: monk1_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -101,7 +113,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: monk1_0
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 288
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6aa8c1143787660800000000000000
+      internalID: 7383778312562845418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monk1_1
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 288
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d518e5f40ad7bb920800000000000000
+      internalID: 3007135303679770973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monk1_2
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 288
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6a1b7e88e51cac0800000000000000
+      internalID: -3836681465447209298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monk1_3
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 288
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16a1a87662de08d0800000000000000
+      internalID: -2878131774290811365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

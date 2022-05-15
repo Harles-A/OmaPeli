@@ -33,9 +33,32 @@ public class GameManager : MonoBehaviour
 
     //References
     public PlayerController player;
+    public Weapon weapon;
+    public FloatingTextManager floatingTextManager;
 
     public int coins;
     public int experience;
+
+    //Floating text stuff
+    public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
+    {
+        floatingTextManager.Show(msg, fontSize, color, position, motion, duration);
+    }
+
+    // Weapon Upgrade System
+    public bool TryUpgradeWeapon()
+    {
+        //Check if weapon is at max level
+        if (weaponPrices.Count <= weapon.weaponLevel)
+            return false;
+        //If we can upgrade, check if we have enough money
+        if(coins >= weaponPrices[weapon.weaponLevel])
+        {
+            coins -= weaponPrices[weapon.weaponLevel];
+            weapon.UpgradeWeapon();
+        }
+        return false;
+    }
 
     //Save the current state of the game
     public void SaveState()
@@ -44,7 +67,7 @@ public class GameManager : MonoBehaviour
         s += "0" + "|";
         s += coins.ToString() + "|";
         s += experience.ToString() + "|";
-        s += "0";
+        s += weapon.weaponLevel.ToString();
 
 
         PlayerPrefs.SetString("SaveState", s);
@@ -60,7 +83,7 @@ public class GameManager : MonoBehaviour
         //Change character model - TODO
         coins = int.Parse(data[1]);
         experience = int.Parse(data[2]);
-        //Change weapon - TODO
+        weapon.SetWeaponLevel(int.Parse(data[3]));
 
         Debug.Log("LoadState");
     }
