@@ -13886,28 +13886,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: MonkNPC
       objectReference: {fileID: 0}
-    - target: {fileID: 286112846489283066, guid: 89ae85aa0ccdea84cb55586ef4a4b1bb, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1851546057669601600, guid: 89ae85aa0ccdea84cb55586ef4a4b1bb, type: 3}
-      propertyPath: m_Size.x
-      value: 0.1582089
-      objectReference: {fileID: 0}
-    - target: {fileID: 1851546057669601600, guid: 89ae85aa0ccdea84cb55586ef4a4b1bb, type: 3}
-      propertyPath: m_Size.y
-      value: 0.1521998
-      objectReference: {fileID: 0}
-    - target: {fileID: 1851546057669601600, guid: 89ae85aa0ccdea84cb55586ef4a4b1bb, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.0014781952
-      objectReference: {fileID: 0}
-    - target: {fileID: 1851546057669601600, guid: 89ae85aa0ccdea84cb55586ef4a4b1bb, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.00008803606
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 279463850, guid: 89ae85aa0ccdea84cb55586ef4a4b1bb, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89ae85aa0ccdea84cb55586ef4a4b1bb, type: 3}
 --- !u!1 &1093167275
 GameObject:
@@ -15459,38 +15438,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4838814217063890218, guid: 21b753b8d29a544a5be8fd35870ee6bc, type: 3}
   m_PrefabInstance: {fileID: 1210456233}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1225102940 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 286112846489283066, guid: 89ae85aa0ccdea84cb55586ef4a4b1bb, type: 3}
-  m_PrefabInstance: {fileID: 1072648428}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1225102941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1225102940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e56b55da619c7241b29c911a8a602f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  filter:
-    useTriggers: 0
-    useLayerMask: 0
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 0
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
-  message: Help! Monsters have overrun the monastery.
 --- !u!1 &1274268295
 GameObject:
   m_ObjectHideFlags: 0
@@ -17432,7 +17379,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSprites:
   - {fileID: 21300000, guid: 36f4cad270e5078459a41b9c29b85c4b, type: 3}
-  - {fileID: 7383778312562845418, guid: daa9fa2186b8822469be87c7e0c674f5, type: 3}
   weaponSprites:
   - {fileID: 6935464051961617222, guid: cc5de1175c409be469c9d7907c8e745d, type: 3}
   - {fileID: -7996808963434139365, guid: cc5de1175c409be469c9d7907c8e745d, type: 3}

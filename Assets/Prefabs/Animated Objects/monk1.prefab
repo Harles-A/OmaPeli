@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 286112846489283064}
   - component: {fileID: 286112846489283065}
   - component: {fileID: 1851546057669601600}
-  - component: {fileID: 279463850}
+  - component: {fileID: 1225102941}
   m_Layer: 9
   m_Name: monk1
   m_TagString: Untagged
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -695927343
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7383778312562845418, guid: daa9fa2186b8822469be87c7e0c674f5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -117,7 +117,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0009347573, y: 0.00046029687}
+  m_Offset: {x: -0.0014781952, y: -0.00008803606}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -128,9 +128,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.103703335, y: 0.13125494}
+  m_Size: {x: 0.1582089, y: 0.1521998}
   m_EdgeRadius: 0
---- !u!114 &279463850
+--- !u!114 &1225102941
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 286112846489283066}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c280ff1b2d0e794bbd3bf1ea948511c, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e56b55da619c7241b29c911a8a602f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   filter:
@@ -156,3 +156,4 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+  message: Help! Monsters have overrun the monastery.
