@@ -38,6 +38,7 @@ SpriteAtlas:
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: -5489276990472925769, guid: cc5de1175c409be469c9d7907c8e745d, type: 3}
   - {fileID: -965978741949361449, guid: cc5de1175c409be469c9d7907c8e745d, type: 3}
   - {fileID: 1789241896626981711, guid: cc5de1175c409be469c9d7907c8e745d, type: 3}
   - {fileID: -2381798348262088124, guid: cc5de1175c409be469c9d7907c8e745d, type: 3}
@@ -355,6 +356,7 @@ SpriteAtlas:
   - {fileID: -2037003366744670602, guid: 68c5d20bdea81c54badd05f9600b5582, type: 3}
   - {fileID: 4421932562683126768, guid: 68c5d20bdea81c54badd05f9600b5582, type: 3}
   m_PackedSpriteNamesToIndex:
+  - tiny_skull_0
   - healing_fountain_2
   - healing_fountain_1
   - healing_fountain_0

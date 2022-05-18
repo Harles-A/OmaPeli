@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: ee59a056c10ec9c42a2c2b0047a25b71
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - ExpressionPro
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 799103e04aafaf44d9661fc0ce66f305, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

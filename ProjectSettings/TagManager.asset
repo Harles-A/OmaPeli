@@ -48,11 +48,11 @@ TagManager:
   - name: Asset Layer
     uniqueID: 1603089675
     locked: 0
-  - name: Character
-    uniqueID: 3599039953
-    locked: 0
   - name: Interactable
     uniqueID: 1902660269
+    locked: 0
+  - name: Character
+    uniqueID: 3599039953
     locked: 0
   - name: Weapons
     uniqueID: 485532835

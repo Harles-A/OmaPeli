@@ -5,13 +5,28 @@ using UnityEngine;
 public class PlayerController : Mover
 {
     private SpriteRenderer spriteRenderer;
+    private bool isAlive = true;
 
     protected override void Start()
     {
         base.Start();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
-        DontDestroyOnLoad(gameObject);
+    }
+
+    protected override void ReceiveDamage(Damage dmg)
+    {
+        if (!isAlive)
+            return;
+
+        base.ReceiveDamage(dmg);
+        GameManager.instance.OnHitpointChange();
+    }
+
+    protected override void Death()
+    {
+        isAlive = false;
+        GameManager.instance.gameOverAnim.SetTrigger("Show");
     }
     private void FixedUpdate()
     {
@@ -19,8 +34,8 @@ public class PlayerController : Mover
         float x = Input.GetAxisRaw("Horizontal");
         // Look for movement input on the Y axis.
         float y = Input.GetAxisRaw("Vertical");
-
-        UpdateMotor(new Vector3(x, y, 0));
+        if(isAlive)
+            UpdateMotor(new Vector3(x, y, 0));
     }
 
     public void SwapSprite(int skinId)
@@ -39,5 +54,26 @@ public class PlayerController : Mover
         for (int i = 0; i < level; i++)
             OnLevelUp();
         
+    }
+
+    public void Heal(int healingAmount)
+    {
+        if (hitpoint == maxHitpoint)
+            return;
+        hitpoint += healingAmount;
+        if (hitpoint > maxHitpoint)
+            hitpoint = maxHitpoint;
+        else
+        {
+            GameManager.instance.ShowText("+" + healingAmount.ToString() + "hp", 25, Color.green, transform.position, Vector3.up * 30, 1.0f);
+            GameManager.instance.OnHitpointChange();
+        }
+    }
+    public void Respawn()
+    {
+        Heal(maxHitpoint);
+        isAlive = true;
+        immuneTime = Time.time;
+        pushDirection = Vector3.zero;
     }
 }
