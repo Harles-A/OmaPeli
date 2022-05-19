@@ -640,7 +640,7 @@ TextureImporter:
     second: heart_0
   - first:
       213: 5241210959423059515
-    second: key_right_0
+    second: key_0
   - first:
       213: 8081155422216111857
     second: gold_coin_0
@@ -661,34 +661,34 @@ TextureImporter:
     second: heart_3
   - first:
       213: 2306414884253244724
-    second: key_left_1
+    second: key_7
   - first:
       213: -3761752583165123209
-    second: key_left_2
+    second: key_8
   - first:
       213: -660664445831717807
-    second: key_left_3
+    second: key_9
   - first:
       213: -2008004241603745411
-    second: key_left_4
+    second: key_10
   - first:
       213: 434126718728178823
-    second: key_left_5
+    second: key_11
   - first:
       213: -7117550745005964219
-    second: key_right_5
+    second: key_5
   - first:
       213: -8908520919367474691
-    second: key_right_4
+    second: key_4
   - first:
       213: -3283109704418634438
-    second: key_right_3
+    second: key_3
   - first:
       213: -2832304172942285001
-    second: key_right_2
+    second: key_2
   - first:
       213: -8070188937437875649
-    second: key_right_1
+    second: key_1
   - first:
       213: 2883175544766888459
     second: gold_coin_1
@@ -5266,7 +5266,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: key_left_0
+      name: key_6
       rect:
         serializedVersion: 2
         x: 112
@@ -5665,7 +5665,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: key_right_0
+      name: key_0
       rect:
         serializedVersion: 2
         x: 112
@@ -5812,7 +5812,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: key_left_1
+      name: key_7
       rect:
         serializedVersion: 2
         x: 128
@@ -5833,7 +5833,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: key_left_2
+      name: key_8
       rect:
         serializedVersion: 2
         x: 144
@@ -5854,7 +5854,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: key_left_3
+      name: key_9
       rect:
         serializedVersion: 2
         x: 160
@@ -5875,7 +5875,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: key_left_4
+      name: key_10
       rect:
         serializedVersion: 2
         x: 176
@@ -5896,7 +5896,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: key_left_5
+      name: key_11
       rect:
         serializedVersion: 2
         x: 192
@@ -5917,7 +5917,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: key_right_5
+      name: key_5
       rect:
         serializedVersion: 2
         x: 192
@@ -5938,7 +5938,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: key_right_4
+      name: key_4
       rect:
         serializedVersion: 2
         x: 176
@@ -5959,7 +5959,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: key_right_3
+      name: key_3
       rect:
         serializedVersion: 2
         x: 160
@@ -5980,7 +5980,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: key_right_2
+      name: key_2
       rect:
         serializedVersion: 2
         x: 144
@@ -6001,7 +6001,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: key_right_1
+      name: key_1
       rect:
         serializedVersion: 2
         x: 128
@@ -7038,7 +7038,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7059,7 +7059,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7080,7 +7080,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7101,7 +7101,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7122,7 +7122,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7143,7 +7143,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7164,7 +7164,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7185,7 +7185,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7206,7 +7206,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
