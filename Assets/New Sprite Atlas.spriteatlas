@@ -57,6 +57,7 @@ SpriteAtlas:
   - {fileID: 4116315838428805517, guid: cc5de1175c409be469c9d7907c8e745d, type: 3}
   - {fileID: -5565119343306662377, guid: cc5de1175c409be469c9d7907c8e745d, type: 3}
   - {fileID: -1390105924216010715, guid: cc5de1175c409be469c9d7907c8e745d, type: 3}
+  - {fileID: 2473193169039353919, guid: cc5de1175c409be469c9d7907c8e745d, type: 3}
   - {fileID: -8816164509621588245, guid: 68c5d20bdea81c54badd05f9600b5582, type: 3}
   - {fileID: -2863056430618680079, guid: 68c5d20bdea81c54badd05f9600b5582, type: 3}
   - {fileID: -335420109793454038, guid: 68c5d20bdea81c54badd05f9600b5582, type: 3}
@@ -375,6 +376,7 @@ SpriteAtlas:
   - sword_6
   - sword_5
   - sword_4
+  - big_grey_carpet_0
   - full_treasure_chest_3
   - wall_with_window_0
   - full_treasure_chest_2

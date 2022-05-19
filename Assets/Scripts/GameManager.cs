@@ -117,7 +117,6 @@ public class GameManager : MonoBehaviour
     }
     public void OnLevelUp()
     {
-        Debug.Log("Level Up");
         player.OnLevelUp();
         OnHitpointChange();
     }
@@ -158,7 +157,7 @@ public class GameManager : MonoBehaviour
 
         string[] data = PlayerPrefs.GetString("SaveState").Split('|');
 
-        //Change character model - TODO
+        
 
         //Change the amount of money
         coins = int.Parse(data[1]);
