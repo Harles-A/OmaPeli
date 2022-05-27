@@ -11,13 +11,14 @@ public class FloatingTextManager : MonoBehaviour
 
     private List<FloatingText> floatingTexts = new List<FloatingText>();
 
-
+    //Update the floating text each frame
     private void Update()
     {
         foreach (FloatingText txt in floatingTexts)
             txt.UpdateFloatingText();
     }
 
+    //Set the parameters of the floating text, such as color, font size, duration etc. And of course the actual text itself is stored in msg
     public void Show(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
 
     {
@@ -34,6 +35,7 @@ public class FloatingTextManager : MonoBehaviour
         floatingText.Show();
     }
 
+    //Get the floating text a.k.a the message that should be shown and store it in txt variable.
     private FloatingText GetFloatingText()
     {
         FloatingText txt = floatingTexts.Find(t => !t.active);

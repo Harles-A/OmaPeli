@@ -8,6 +8,7 @@ public class HealingFountain : Collidable
     private float healCooldown = 1.0f;
     private float lastHeal;
 
+    //When player is inside the collider of this object, he is healed once every certain amount of time
     protected override void OnCollide(Collider2D coll)
     {
         if (coll.name != "Player")

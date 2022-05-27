@@ -14,7 +14,10 @@ public class MainMenu : MonoBehaviour
     public RectTransform xpBar;
 
     //Character Selection
+    //This is the stuff for character selection that i implemented but it isnt really used in game because i didnt have time to add more
+    //playable characters to the game and tbh i didnt really want to anyway. I kept the functions in case i want to add them in the future.
 
+    //When clicking on the arrows in the character menu, trigger OnSelectionChanged and add or subtract to/from current character selection value
     public void OnArrowClick(bool right)
     {
         if(right)
@@ -39,6 +42,8 @@ public class MainMenu : MonoBehaviour
         }
     }
 
+    //When this is called by previous function, swap the player Sprite with the appropriate one depending on which sprite the currentCharacterSelection
+    //corresponds to
     private void OnSelectionChanged()
     {
         characterSelectionSprite.sprite = GameManager.instance.playerSprites[currentCharacterSelection];
@@ -46,13 +51,14 @@ public class MainMenu : MonoBehaviour
     }
 
     //Weapon Upgrades
+    //When TryUpgradeWeapon function is successfully called, update the character menu.
     public void OnUpgradeClick()
     {
         if (GameManager.instance.TryUpgradeWeapon())
             UpdateMenu();
     }
 
-    //Update Character information
+    //Update Character information menu when this function is called
     public void UpdateMenu()
     {
         //Weapon

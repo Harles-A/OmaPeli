@@ -17,12 +17,15 @@ public class Weapon : Collidable
     private float cooldown = 0.5f;
     private float lastSwing;
 
+
+    //Get the reference to the animator of the weapon
     protected override void Start()
     {
         base.Start();
         anim = GetComponent<Animator>();
     }
 
+    //Swing the weapon if player presses spacebar
     protected override void Update()
     {
         base.Update();
@@ -37,6 +40,7 @@ public class Weapon : Collidable
         }
     }
 
+    //If enemy collides with the weapon's collider, deal damage to it
     protected override void OnCollide(Collider2D coll)
     {
         if(coll.tag == "Fighter")
@@ -60,11 +64,13 @@ public class Weapon : Collidable
         
     }
 
+    //Start the swing animation
     private void Swing()
     {
         anim.SetTrigger("Swing");
     }
 
+    //Increase weapon level by 1 if the UpgradeWeapon is Called
     public void UpgradeWeapon()
     {
         weaponLevel++;
@@ -73,6 +79,7 @@ public class Weapon : Collidable
          
     }
 
+    //Set player's current weapon level when scene is loaded and this is called by the Game Manager
     public void SetWeaponLevel(int level)
     {
         weaponLevel = level;

@@ -14,6 +14,8 @@ public class NpcTexts : Collidable
         base.Start();
         lastText = -cooldown;
     }
+    //When player collides with the npc, npc will show his text.
+    //The text has a certin cooldown before which it wont show again if player collides again before then
     protected override void OnCollide(Collider2D coll)
     {
         if(Time.time - lastText > cooldown)

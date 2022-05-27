@@ -19,7 +19,7 @@ public abstract class Mover : Fighter
         boxCollider = GetComponent<BoxCollider2D>();
     }
 
-
+    //This is the system that is used to move characters
     protected virtual void UpdateMotor(Vector3 input)
     {
         // Reset moveDelta.

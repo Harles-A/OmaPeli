@@ -10,6 +10,7 @@ public class CameraManager : MonoBehaviour
     public float boundX = 0.2f;
     public float boundY = 0.1f;
 
+    // Find the player character and se tit as lookAt target
     private void Start()
     {
         lookAt = GameObject.Find("Player").transform;

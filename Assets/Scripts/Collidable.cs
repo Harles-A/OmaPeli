@@ -8,6 +8,8 @@ public class Collidable : MonoBehaviour
     private BoxCollider2D boxCollider;
     private Collider2D[] hits = new Collider2D[10];
 
+
+    //Set the boxcollider when scene is loaded
     protected virtual void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
@@ -29,8 +31,9 @@ public class Collidable : MonoBehaviour
         }
     }
 
+    //Baseline function for all the other scripts that inherit from this one to override
     protected virtual void OnCollide(Collider2D coll)
     {
-        Debug.Log("OnCollide was not implemented in " + this.name);
+        
     }
 }

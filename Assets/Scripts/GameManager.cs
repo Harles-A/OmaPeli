@@ -11,7 +11,8 @@ public class GameManager : MonoBehaviour
         //Check to see if GameManager already exists in the scene
         if(GameManager.instance != null)
         {
-            //If it does then destroy the extra copy
+            //If it does then destroy the extra copy of the game manager and other objects that would logically also have to
+            //exist if the extra game manager exists due to them all using the DontDestroyOnLoad
             Destroy(gameObject);
             Destroy(player.gameObject);
             Destroy(floatingTextManager.gameObject);
@@ -20,13 +21,9 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        //Delete old save data when game starts
-        //PlayerPrefs.DeleteAll();
-
         instance = this;
         SceneManager.sceneLoaded += LoadState;
         SceneManager.sceneLoaded += OnSceneLoaded;
-        //Keep the GameManager around throughout all the scenes
        
     }
 
@@ -44,6 +41,7 @@ public class GameManager : MonoBehaviour
     public GameObject hud;
     public GameObject menu;
     public Animator gameOverAnim;
+    
 
     public int coins;
     public int experience;
@@ -60,7 +58,7 @@ public class GameManager : MonoBehaviour
         //Check if weapon is at max level
         if (weaponPrices.Count <= weapon.weaponLevel)
             return false;
-        //If we can upgrade, check if we have enough money
+        //If we can upgrade, check if we have enough money. If we do then call UpgradeWeapon.
         if(coins >= weaponPrices[weapon.weaponLevel])
         {
             coins -= weaponPrices[weapon.weaponLevel];
@@ -70,6 +68,7 @@ public class GameManager : MonoBehaviour
     }
 
     //HealthBar System
+    //When player loses health, change the healthbar graphics to indicate it
     public void OnHitpointChange()
     {
         float ratio = (float)player.hitpoint / (float)player.maxHitpoint;
@@ -77,6 +76,7 @@ public class GameManager : MonoBehaviour
     }
 
     //EXP System
+    //Check what level the player should be based on how much xp he has.
     public int GetCurrentLevel()
     {
         int r = 0;
@@ -108,6 +108,7 @@ public class GameManager : MonoBehaviour
         return xp;
     }
 
+    //Grant player some xp. If it is enough to level him up, call OnLevelUp
     public void GrantXp(int xp)
     {
         int currentLevel = GetCurrentLevel();
@@ -115,6 +116,9 @@ public class GameManager : MonoBehaviour
         if (currentLevel < GetCurrentLevel())
             OnLevelUp();
     }
+    //When GameManager calls OnLevelUp, also call the OnLevelUp function (different function, same name) in the PlayerController script
+    //When player levels up, also call OnHitpointChange because player receivesd +1max health and heals to full
+    //and his healthbar needs to be updated
     public void OnLevelUp()
     {
         player.OnLevelUp();
@@ -134,8 +138,9 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Main");
         player.Respawn();
     }
+    
 
-    //Save the current state of the game
+    //Save the current state of the game(coins, EXP, weapon level)
     public void SaveState()
     {
         string s = "";
@@ -147,7 +152,7 @@ public class GameManager : MonoBehaviour
 
         PlayerPrefs.SetString("SaveState", s);
     }
-    //Load the current state of the game
+    //Load the current state of the game(coins, EXP, weapon level)
     public void LoadState(Scene s, LoadSceneMode mode)
     {
         SceneManager.sceneLoaded -= LoadState;
@@ -159,7 +164,7 @@ public class GameManager : MonoBehaviour
 
         
 
-        //Change the amount of money
+        //Change the amount of coins
         coins = int.Parse(data[1]);
 
         //Change EXP and level(if needed)
@@ -171,4 +176,6 @@ public class GameManager : MonoBehaviour
 
         
     }
+
+    
 }

@@ -28,6 +28,7 @@ public class Enemy : Mover
         hitbox = transform.GetChild(0).GetComponent<BoxCollider2D>();
     }
 
+    //System for Enemy NPCs to detect player and start chasing him.
     private void FixedUpdate()
     {
         //Check if player is in range
@@ -73,6 +74,8 @@ public class Enemy : Mover
 
     }
 
+    //When the enemy with this script dies, destroy the gameobject and grant player some XP points by calling GrantXp in GameManager. 
+    //Also show Floating Combat Text.
     protected override void Death()
     {
         Destroy(gameObject);

@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class GoldCoins : Collectables
 {
+    //How much coins is this collectable worth
     public int coinsAmount = 3;
+    //When player collides with the object, OnCollcet is called to grant him coins and show floating text about it
     protected override void OnCollect()
     {
         if (!collected)

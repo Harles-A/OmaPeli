@@ -8,6 +8,7 @@ public class NecromancerBoss : Enemy
     public float distance = 0.25f;
     public Transform[] skulls;
 
+    //This controls the little skulls floating around this boss
     private void Update()
     {
         for (int i = 0; i < skulls.Length; i++)
